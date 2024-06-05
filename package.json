@@ -1,10 +1,11 @@
 {
   "name": "@matiasnl23/vite-publish-test",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "files": [
     "dist"
   ],
+  "types": "./dist/index.d.ts",
   "main": "./dist/vite-publish-test.umd.cjs",
   "module": "./dist/vite-publish-test.js",
   "exports": {
@@ -21,7 +22,8 @@
   "devDependencies": {
     "@types/node": "^20.14.1",
     "typescript": "^5.4.5",
-    "vite": "^5.2.12"
+    "vite": "^5.2.12",
+    "vite-plugin-dts": "^3.9.1"
   },
   "packageManager": "yarn@4.1.1"
 }
