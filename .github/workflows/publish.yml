@@ -20,7 +20,9 @@ jobs:
           registry-url: 'https://registry.npmjs.org/'
 
       - name: Install yarn
-        run: corepack prepare yarn@4.1.1 --activate
+        run: |
+          corepack enable
+          corepack prepare yarn@4.1.1 --activate
 
       - name: Install dependencies
         run: yarn
